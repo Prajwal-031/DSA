@@ -38,3 +38,9 @@ Thumbs.db
 *.tmp
 *.bak
 
+*GIT_COMMIT_GUIDE.md
+*COMMIT_COMMANDS.txt
+*commit_all_files.ps1
+
+
+
