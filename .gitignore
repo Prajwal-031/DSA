@@ -38,9 +38,16 @@ Thumbs.db
 *.tmp
 *.bak
 
-*GIT_COMMIT_GUIDE.md
-*COMMIT_COMMANDS.txt
-*commit_all_files.ps1
+# Commit logs
+commit_log.txt
+
+# automation scripts (local workspace task scheduler)
+automation_1/
+
+# Old commit guides (optional - remove if you want to commit them)
+GIT_COMMIT_GUIDE.md
+COMMIT_COMMANDS.txt
+commit_all_files.ps1
 
 
 

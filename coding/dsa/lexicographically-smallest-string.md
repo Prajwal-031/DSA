@@ -1,69 +1,97 @@
- I don't know where to start, can you help
 
-mentor Leeco:
 
-Alright, no stress 😎.
-This problem is about generating a string that’s lexicographically smallest — think “dictionary order” 📖.
-We need to figure out how to transform the given string step-by-step until it’s the smallest possible according to the rules in the problem.
+## 🚀 Greedy Construction with Locked Positions | 461 ms | Beats 100% Time & Memory
 
-Before diving in, let’s make sure you understand what lexicographically smallest means — it’s like comparing words alphabetically.
+---
 
-Do you know how to compare two strings in lexicographic order?
+## Intuition
 
-Not sure, need explanation
+We must build the **lexicographically smallest string** `word` of length `n + m − 1` such that every index `i` in `str1` imposes a rule on the substring `word[i … i+m−1]`.
 
-mentor Leeco :
+* If `str1[i] == 'T'` → the substring must **exactly match `str2`**.
+* If `str1[i] == 'F'` → the substring must **not match `str2`**.
 
-Alright, here’s a simple breakdown 📘:
+Since substrings **overlap**, blindly generating strings is impossible.
+Instead, we **construct the smallest possible string and enforce constraints carefully**.
 
-Lexicographic order is just alphabetical order, like words in a dictionary.
-We compare characters from left to right:
+Key ideas:
 
-"apple" comes before "banana" because 'a' < 'b'.
-"app" comes before "apple" because it ends earlier but matches up to that point.
-So, in this problem, “smallest” means the earliest possible string in dictionary order.
+* Start with all `'a'` to guarantee **lexicographic minimality**.
+* Characters forced by `'T'` constraints become **locked**.
+* If an `'F'` window accidentally equals `str2`, we modify **one unlocked character** to break the match.
 
-Quiz time: Which is lexicographically smaller — "abc" or "abd"?
+---
 
-abc
+## Approach
 
-mentor Leeco :
+### 1️⃣ Initialize the smallest string
 
-Exactly ✅ "abc" is smaller because at the first differing character ('c' vs 'd'), 'c' comes before 'd' in the alphabet.
+Create a string of length:
 
-Now that we know how lexicographic comparison works, in your problem we’ll need to generate a string and make sure it’s the smallest possible in dictionary order while following the rules given.
+```
+n + m − 1
+```
 
-Do you want me to walk you through the first step of building such a string?
+Fill it with `'a'`.
 
-yes , strat step to end 
+Also maintain a **locked array** to mark positions forced by `'T'`.
 
-mentor Leeco: 
+---
 
-Cool 👍 Let’s go step-by-step from scratch for Lexicographically Smallest Generated String without rushing.
+### 2️⃣ Apply all `T` constraints
 
-Step 1 – Understand the problem in simple words
-We’re given a string and two operations:
+For every `i` where `str1[i] == 'T'`:
 
-Add a to each digit at odd indices (wrap around 0–9).
-Rotate the string to the right by b positions.
-We need the smallest string possible (dictionary order) after any number of operations.
+```
+word[i + j] = str2[j]
+```
 
-Do you want me to move to Step 2 – figuring out how operations affect the string?
+If a locked character conflicts → **return ""**.
 
-Wait, give me an example first
+These positions become **immutable**.
 
-mentor Leeco :
+---
 
-Alright, let’s make it simple with an example 📄:
+### 3️⃣ Fix `F` constraints
 
-Say the string is "1234", and
+For every `i` where `str1[i] == 'F'`:
 
-a = 1 (add 1 to odd indices)
-b = 2 (rotate right by 2 positions)
-1️⃣ Operation 1: Add 1 to odd indices → "1335"
-2️⃣ Operation 2: Rotate right by 2 → "3513"
+Check if:
 
-We can keep applying these to try and get the smallest possible string.
+```
+word[i ... i+m-1] == str2
+```
 
-Quiz: If we rotate "1335" right by 1, what string do we get? 🤔
+If it matches, break it by changing **one unlocked character**.
 
+Prefer the **rightmost position** to keep the string lexicographically small.
+
+If no change is possible → **return ""**.
+
+---
+
+### 4️⃣ Final verification
+
+Because substrings overlap, verify again:
+
+* `T` windows must equal `str2`
+* `F` windows must not equal `str2`
+
+If any rule fails → return `""`.
+
+---
+
+## Complexity
+
+### Time Complexity
+
+[
+O(n \times m)
+]
+
+### Space Complexity
+O(n)
+
+---
+
+If you want, I can also show you a **much stronger LeetCode post format (with diagrams + example walkthrough)** that usually gets **50–200 upvotes**.

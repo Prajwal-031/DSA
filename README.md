@@ -120,4 +120,5 @@ DSA/
 ---
 
 **Let's start with Arrays!** → Navigate to `01_Arrays/`
+**Let's start with string!** --> Navigate to `02_Strings/`
 
