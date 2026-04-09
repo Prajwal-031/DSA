@@ -47,7 +47,7 @@
 ### **Phase 2: Intermediate** (Weeks 3-4)
 5. **Trees** (Binary Trees, BST)
 6. **Graphs** (BFS, DFS)
-7. **Hash Tables**
+7. ✅ **Hash Tables** - *COMPLETED* (13 problems, full implementations)
 8. **Heaps**
 
 ### **Phase 3: Advanced** (Weeks 5-6)
@@ -94,18 +94,35 @@ DSA/
 │   └── java/
 ├── 02_Strings/
 ├── 03_Linked_Lists/
-└── ...
+├── 04_Stacks_Queues/
+├── 05_Trees/
+├── 06_Graphs/
+├── 07_Heaps/
+├── 08_Trie/
+├── 09_Dynamic_Programming/
+├── 10_Greedy_Algorithms/
+├── 11_Backtracking/
+├── 12_Segment_Trees/
+├── 13_Hash Tables/ ✅ *COMPLETED*
+│   ├── README.md (13 LeetCode problems)
+│   ├── PRACTICE_PROBLEMS.md (problem tracking)
+│   ├── python/hash_tables_basics.py (13 implementations)
+│   ├── python/test_01_basics.py (58 unit tests)
+│   ├── java/HashTablesBasics.java (13 implementations)
+│   └── java/HashTablesBasicsTest.java (43 unit tests)
+└── automation_1/ (commit automation scripts)
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-1. Start with **Arrays** (current topic)
-2. Solve problems in order: Easy → Medium → Hard
-3. Practice daily: 2-3 problems minimum
-4. Review solutions and optimize
-5. Track your progress
+1. ✅ **Arrays** - Completed (basic operations & problems)
+2. ✅ **Hash Tables** - Completed (13 LeetCode problems with full tests)
+3. **Next:** Start with **Strings** → Navigate to `02_Strings/`
+4. Practice daily: 2-3 problems minimum
+5. Review solutions and optimize
+6. Track your progress
 
 ---
 
@@ -120,5 +137,5 @@ DSA/
 ---
 
 **Let's start with Arrays!** → Navigate to `01_Arrays/`
-**Let's start with string!** --> Navigate to `02_Strings/`
-
+**Hash Tables completed!** → Navigate to `13_Hash Tables/`  
+**Next: Strings** → Navigate to `02_Strings/`
