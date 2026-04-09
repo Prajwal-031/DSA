@@ -110,7 +110,6 @@ DSA/
 │   ├── python/test_01_basics.py (58 unit tests)
 │   ├── java/HashTablesBasics.java (13 implementations)
 │   └── java/HashTablesBasicsTest.java (43 unit tests)
-└── automation_1/ (commit automation scripts)
 ```
 
 ---
