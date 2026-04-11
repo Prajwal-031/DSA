@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import HeapsBasics.*;
 
-
+// JUnit tests for HeapsBasics.MinHeap and HeapsBasics.MaxHeap
 public class HeapsBasicsTest {
     
     @Test

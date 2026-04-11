@@ -1,8 +1,7 @@
 """
 Heaps - Interview prep (Python)
 ================================
-Real implementations: MinHeap, MaxHeap with core operations.
-"""
+Real implementations: MinHeap, MaxHeap with core operations. """
 
 import heapq
 from typing import List, Any
