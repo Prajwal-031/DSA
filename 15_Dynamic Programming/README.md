@@ -1,5 +1,5 @@
-# Dynamic Programming - Complete Guide for Interviews
-
+# Dynamic Programming 
+### Complete Guide for Interviews
 ## What is Dynamic Programming?
 
 **Dynamic Programming (DP)** solves problems by breaking them into overlapping subproblems, storing intermediate answers, and reusing them instead of recomputing work.

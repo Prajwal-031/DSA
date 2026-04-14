@@ -1,6 +1,10 @@
 import importlib.util
 import pathlib
 
+""" 
+Dynamic Programming - Interview prep (Python)
+Reference implementations for common DP interview patterns.
+"""
 
 spec = importlib.util.spec_from_file_location(
     "dynamic_programming_basics", pathlib.Path(__file__).parent / "01_basics.py"

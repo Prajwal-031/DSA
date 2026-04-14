@@ -1,7 +1,7 @@
 """
 Dynamic Programming - Interview prep (Python)
-============================================
 Reference implementations for common DP interview patterns.
+
 """
 
 from __future__ import annotations
@@ -40,7 +40,6 @@ def fibonacci(n: int) -> int:
     for _ in range(2, n + 1):
         prev2, prev1 = prev1, prev1 + prev2
     return prev1
-
 
 def climb_stairs(n: int) -> int:
     """LeetCode 70: number of ways to reach step n."""

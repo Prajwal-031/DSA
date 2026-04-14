@@ -1,11 +1,13 @@
+/**
+ * Dynamic Programming - Interview prep (Java)
+ * Reference implementations for common DP interview patterns.
+ * */
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Dynamic Programming - Interview prep (Java)
- * Reference implementations for common DP interview patterns.
- */
+
 public class DynamicProgrammingBasics {
 
     private static final String TOPIC = "Dynamic Programming";

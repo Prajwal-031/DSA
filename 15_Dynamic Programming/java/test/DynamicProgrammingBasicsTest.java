@@ -1,5 +1,5 @@
+//This file is part of the 15_Dynamic Programming module, which is licensed under the MIT License (MIT).
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
