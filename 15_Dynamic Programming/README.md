@@ -106,6 +106,7 @@ mvn test -Dtest=DynamicProgrammingBasicsTest
 
 If your repo is not using Maven yet, you can still run `DynamicProgrammingBasicsTest.java` directly from IntelliJ or VS Code once JUnit 5 is available on the classpath.
 
+**Dynamic Programming (DP)** solves problems by breaking them into overlapping subproblems, storing intermediate answers, and reusing them instead of recomputing work.
 ---
 
 ## Learning path
