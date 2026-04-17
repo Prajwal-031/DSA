@@ -60,6 +60,9 @@ You should think about greedy when a problem asks for:
 1. [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/)
 2. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 3. [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/)
+4. [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+5. [1403. Minimum Subsequence in Non-Increasing Order](https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/)
+6. [976. Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)
 
 ### Medium
 
@@ -68,12 +71,17 @@ You should think about greedy when a problem asks for:
 3. [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
 4. [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 5. [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
+6. [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+7. [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
+8. [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/)
+9. [134. Gas Station](https://leetcode.com/problems/gas-station/)
 
 ### Hard
 
 1. [135. Candy](https://leetcode.com/problems/candy/)
 2. [871. Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/)
 3. [630. Course Schedule III](https://leetcode.com/problems/course-schedule-iii/)
+4. [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
 
 ---
 
