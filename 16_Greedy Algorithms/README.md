@@ -1,7 +1,8 @@
-# Greedy Algorithms
-### Complete Guide for Interviews
+# Greedy_Algorithms
+### Complete_Guide_for_Interviews
 
-## What is a Greedy Algorithm?
+
+## What_is_a_Greedy_Algorithm?
 
 A **greedy algorithm** builds the answer one local choice at a time, always picking the option that looks best right now.
 
@@ -56,7 +57,7 @@ You should think about greedy when a problem asks for:
 ## Interview problems (easy to hard)
 
 ### Easy
-
+ 
 1. [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/)
 2. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 3. [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/)
