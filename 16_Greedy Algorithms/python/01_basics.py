@@ -149,10 +149,7 @@ class GreedyAlgorithmsBasics:
                 result.append(end - start + 1)
                 start = index + 1
 
-        return result
-
-
-def main() -> None:
+        return result\n\n    @staticmethod\n    def lemonade_change(bills: list[int]) -> bool:\n        \"\"\"\n        LeetCode 860: Lemonade Change.\n\n        Track count of $5 and $10 bills. For $20, prefer giving $10+$5 change;\n        if not possible, give three $5. Fail if insufficient bills.\n        Time: O(n), Space: O(1)\n        \"\"\"\n        five = 0\n        ten = 0\n        for bill in bills:\n            if bill == 5:\n                five += 1\n            elif bill == 10:\n                if five == 0:\n                    return False\n                five -= 1\n                ten += 1\n            else:  # 20\n                if ten > 0 and five > 0:\n                    ten -= 1\n                    five -= 1\n                elif five >= 3:\n                    five -= 3\n                else:\n                    return False\n        return True\n\n\ndef main() -> None:
     print(GreedyAlgorithmsBasics.describe())
     print("Checklist:")
     for item in GreedyAlgorithmsBasics.checklist():
@@ -171,6 +168,7 @@ def main() -> None:
         GreedyAlgorithmsBasics.erase_overlap_intervals([[1, 2], [2, 3], [3, 4], [1, 3]]),
     )
     print("Partition Labels:", GreedyAlgorithmsBasics.partition_labels("ababcbacadefegdehijhklij"))
+    print("Lemonade Change:", GreedyAlgorithmsBasics.lemonade_change([5,5,5,10,20]))
 
 
 if __name__ == "__main__":

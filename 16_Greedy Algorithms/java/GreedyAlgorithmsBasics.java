@@ -135,28 +135,7 @@ public class GreedyAlgorithmsBasics {
      * LeetCode 763: Partition Labels.
      * Time: O(n), Space: O(1) for bounded lowercase alphabet input
      */
-    public static List<Integer> partitionLabels(String text) {
-        Map<Character, Integer> lastPosition = new HashMap<>();
-        for (int i = 0; i < text.length(); i++) {
-            lastPosition.put(text.charAt(i), i);
-        }
-
-        List<Integer> result = new ArrayList<>();
-        int start = 0;
-        int end = 0;
-
-        for (int i = 0; i < text.length(); i++) {
-            end = Math.max(end, lastPosition.get(text.charAt(i)));
-            if (i == end) {
-                result.add(end - start + 1);
-                start = i + 1;
-            }
-        }
-
-        return result;
-    }
-
-    public static void main(String[] args) {
+    public static List<Integer> partitionLabels(String text) {\n        Map<Character, Integer> lastPosition = new HashMap<>();\n        for (int i = 0; i < text.length(); i++) {\n            lastPosition.put(text.charAt(i), i);\n        }\n\n        List<Integer> result = new ArrayList<>();\n        int start = 0;\n        int end = 0;\n\n        for (int i = 0; i < text.length(); i++) {\n            end = Math.max(end, lastPosition.get(text.charAt(i)));\n            if (i == end) {\n                result.add(end - start + 1);\n                start = i + 1;\n            }\n        }\n\n        return result;\n    }\n\n    /**\n     * LeetCode 860: Lemonade Change.\n     * Time: O(n), Space: O(1)\n     */\n    public static boolean lemonadeChange(int[] bills) {\n        int five = 0;\n        int ten = 0;\n        for (int bill : bills) {\n            if (bill == 5) {\n                five++;\n            } else if (bill == 10) {\n                if (five == 0) return false;\n                five--;\n                ten++;\n            } else { // 20\n                if (ten > 0 && five > 0) {\n                    ten--;\n                    five--;\n                } else if (five >= 3) {\n                    five -= 3;\n                } else {\n                    return false;\n                }\n            }\n        }\n        return true;\n    }\n\n    public static void main(String[] args) {
         System.out.println(TOPIC);
         System.out.println(describe());
         for (String item : checklist()) {
@@ -169,6 +148,5 @@ public class GreedyAlgorithmsBasics {
         System.out.println("Can Jump: " + canJump(new int[] {2, 3, 1, 1, 4}));
         System.out.println("Minimum Jumps: " + minimumJumps(new int[] {2, 3, 1, 1, 4}));
         System.out.println("Erase Overlaps: " + eraseOverlapIntervals(new int[][] {{1, 2}, {2, 3}, {3, 4}, {1, 3}}));
-        System.out.println("Partition Labels: " + partitionLabels("ababcbacadefegdehijhklij"));
-    }
+        System.out.println("Partition Labels: " + partitionLabels("ababcbacadefegdehijhklij"));\n        System.out.println("Lemonade Change: " + lemonadeChange(new int[] {5,5,5,10,20}));\n    }
 }

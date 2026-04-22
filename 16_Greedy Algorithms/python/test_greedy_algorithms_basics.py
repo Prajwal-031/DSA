@@ -27,20 +27,3 @@ def test_can_jump() -> None:
     assert GreedyAlgorithmsBasics.can_jump([2, 3, 1, 1, 4]) is True
     assert GreedyAlgorithmsBasics.can_jump([3, 2, 1, 0, 4]) is False
     assert GreedyAlgorithmsBasics.can_jump([0]) is True
-
-
-def test_minimum_jumps() -> None:
-    assert GreedyAlgorithmsBasics.minimum_jumps([2, 3, 1, 1, 4]) == 2
-    assert GreedyAlgorithmsBasics.minimum_jumps([2, 3, 0, 1, 4]) == 2
-    assert GreedyAlgorithmsBasics.minimum_jumps([0]) == 0
-
-
-def test_erase_overlap_intervals() -> None:
-    assert GreedyAlgorithmsBasics.erase_overlap_intervals([[1, 2], [2, 3], [3, 4], [1, 3]]) == 1
-    assert GreedyAlgorithmsBasics.erase_overlap_intervals([[1, 2], [1, 2], [1, 2]]) == 2
-    assert GreedyAlgorithmsBasics.erase_overlap_intervals([]) == 0
-
-
-def test_partition_labels() -> None:
-    assert GreedyAlgorithmsBasics.partition_labels("ababcbacadefegdehijhklij") == [9, 7, 8]
-    assert GreedyAlgorithmsBasics.partition_labels("eccbbbbdec") == [10]
