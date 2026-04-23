@@ -81,3 +81,4 @@ java TravellingSalesmanBasics
 3. Compare greedy vs brute-force on n=4-5 cities
 4. Extend to asymmetric distances
 5. Learn when DP becomes feasible (n≤16 typically)
+5. Learn when DP becomes feasible (n≤16 typically)
