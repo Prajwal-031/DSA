@@ -7,10 +7,10 @@
 
 You should think about backtracking when a problem asks for:
 
-- All possible combinations, permutations, or subsets
-- A sequence or arrangement satisfying constraints
-- A path through a grid or graph with restrictions
-- A decision tree where choices lead to dead ends
+1. All possible combinations, permutations, or subsets
+2. A sequence or arrangement satisfying constraints
+3. A path through a grid or graph with restrictions
+4. A decision tree where choices lead to dead ends
 
 ---
 
@@ -121,3 +121,4 @@ If your repo is not using Maven yet, you can still run `BacktrackingBasicsTest.j
    - What is the state at each recursion?
    - How do I prune invalid branches early?
    - Can I sort or use memoization to reduce work?
+
